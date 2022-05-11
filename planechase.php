@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php
-    echo "<img src='opca-2-interplanar-tunnel.jpg' >";
+    echo "<img src='planes/opca-2-interplanar-tunnel.jpg' >";
 ?>
 </body>
 </html>

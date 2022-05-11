@@ -9,6 +9,7 @@
 </head>
 <body>
 <?php
+    echo 'hi';
     $con=mysqli_connect("db.luddy.indiana.edu","i308s22_natcburk","my+sql=i308s22_natcburk","i308s22_natcburk");
     if(!$con){
         die("Connection failed: ".mysqli_connect_error());

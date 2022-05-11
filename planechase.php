@@ -16,6 +16,7 @@
     $sql = "SELECT dir WHERE pid = 5 FROM planes;";
     $result = mysqli_query($con,$sql);
     echo "<img src='planes/".$result['dir']."' >"; 
+    echo $result['dir'];
 ?>
 </body>
 </html>

@@ -13,7 +13,7 @@
     if(!$con){
         die("Connection failed: ".mysqli_connect_error());
     }
-    $sql = "SELECT dir WHERE pid = 5 FROM planes;";
+    $sql = "SELECT dir FROM planes WHERE pid = 5;";
     $result = mysqli_query($con,$sql);
     echo "<img src='planes/".$result['dir']."' >"; 
     echo 'hi';

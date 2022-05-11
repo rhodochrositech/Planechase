@@ -9,7 +9,13 @@
 </head>
 <body>
 <?php
-    echo "<img src='planes/opca-2-interplanar-tunnel.jpg' >";
+    $con=mysqli_connect("db.luddy.indiana.edu","i308s22_natcburk","my+sql=i308s22_natcburk","i308s22_natcburk");
+    if(!$con){
+        die("Connection failed: ".mysqli_connect_error());
+    }
+    $sql = "SELECT dir WHERE pid = 1 FROM planes;";
+    $result = mysqli_query($con,$sql)
+    echo "<img src='planes/".$result['dir']."' >"; 
 ?>
 </body>
 </html>
